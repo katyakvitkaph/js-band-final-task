@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "./assest/scss/main.scss";
+import Root from './components/Root'
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <p>JS BAND store</p>
-  </React.StrictMode>,
+  <Root />,
   document.getElementById('root')
 );
 
