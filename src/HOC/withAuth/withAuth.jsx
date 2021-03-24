@@ -34,9 +34,9 @@ const withAuth = BaseComponent => {
     }
   }
 
-  const mSTP = state => ({ authentificated: isAuth(state) });
+  const mapStateToProps = state => ({ authentificated: isAuth(state) });
 
-  return connect(mSTP)(WithAuthRedirect);
+  return connect(mapStateToProps)(WithAuthRedirect);
 };
 
 export default withAuth;
