@@ -24,8 +24,8 @@ AuthRoute.defaultProps = {
   token: null,
 };
 
-const mSTP = state => ({
+const mapStateToProps = state => ({
   token: getToken(state),
 });
 
-export default connect(mSTP)(AuthRoute);
+export default connect(mapStateToProps)(AuthRoute);

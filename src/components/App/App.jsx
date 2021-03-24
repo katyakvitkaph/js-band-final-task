@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import LoginPage from '../../pages/LoginPage';
 import BooksPage from '../../pages/BooksPage';
+import AuthRoute from '../../HOC/AuthRoute/index'
 import { getToken } from '../../store/session/sessionSelectors';
 
 const App = () => {
@@ -10,7 +11,7 @@ const App = () => {
 		<Switch>
 			<Redirect exact from='/' to='/signin' />
 			<Route exact path='/signin' component={LoginPage} />
-			<Route path='/books' component={BooksPage} type='private' />
+			<AuthRoute exact path='/books' component={BooksPage} type='private' />
 		</Switch>
 	);
 };
