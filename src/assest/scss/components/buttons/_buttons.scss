@@ -1,14 +1,50 @@
-.common-btn {
-    width: 200px;
-    height: 40px;
-    font-size: 14px;
-    border: 0;
-    border-radius: none!important;
-    letter-spacing: 0px;
-    line-height: 21px;
-    font-family: inherit;
-    font-weight: 700;
-    text-align: center;
-    outline: none;
-    cursor: pointer;
+.btn {
+  height: 40px;
+  font-size: 14px;
+  border: 0;
+  border-radius: none !important;
+  letter-spacing: 0px;
+  line-height: 21px;
+  font-family: inherit;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 200px;
+}
+.logout-btn {
+  width: 100px;
+}
+
+.logout-btn:hover:hover,
+.book-item__footer-btn:hover {
+  background-color: #ff5722;
+  color: #fff;
+}
+
+.cart-btn {
+  position: relative;
+  font-size: 18px;
+  width: 70px;
+  z-index: 2;
+}
+
+.cart-btn:hover {
+  background-size: 100% 2px;
+}
+
+.cart-btn:before {
+  content: '';
+  display: block;
+  background-image: url('../../../icons/cart.svg');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: -20px;
+  z-index: 3;
 }

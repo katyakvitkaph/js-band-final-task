@@ -2,6 +2,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   position: relative;
 }
 
 .form__label {
@@ -26,5 +27,5 @@
 .error-msg {
     color: red;
     position: absolute;
-    bottom: 7%;
+    bottom: 34%;
 }

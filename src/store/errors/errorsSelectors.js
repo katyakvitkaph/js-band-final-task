@@ -1,2 +1,3 @@
-export const getSessionError = state => state.errors.sessionError;
+const getSessionError = state => state.errors.sessionError;
 
+export default getSessionError;

@@ -1,0 +1,33 @@
+.books-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 120px;
+  z-index: 9;
+}
+.wrapper {
+  position: relative;
+}
+.books-list__book {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  border: 3px double rgb(241, 241, 241);
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 1px 35px 32px -10px rgba(128, 128, 128, 0.09);
+  margin-bottom: 20px;
+}
+
+.wrapper > span {
+  position: absolute;
+  font-weight: 900;
+  font-size: 200px;
+  top: -0.5%;
+  line-height: 221px;
+  color: #fbfbfb;
+  z-index: 0;
+}

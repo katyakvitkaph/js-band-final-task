@@ -4,28 +4,21 @@ import { Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getToken } from '../../store/session/sessionSelectors';
 
-const AuthRoute = ({ component: Component, token, ...rest }) => {
-  return (
-    <Route
-      {...rest}
-      render={props =>
-        token ? <Component {...props} /> : <Redirect to="/signin" />
-      }
-    />
-  );
-};
+const AuthRoute = ({ component: Component, token, ...rest }) => (
+	<Route {...rest} render={(props) => (token ? <Component {...props} /> : <Redirect to='/signin' />)} />
+);
 
 AuthRoute.propTypes = {
-  component: PropTypes.func.isRequired,
-  token: PropTypes.string,
+	component: PropTypes.func.isRequired,
+	token: PropTypes.string
 };
 
 AuthRoute.defaultProps = {
-  token: null,
+	token: null
 };
 
-const mapStateToProps = state => ({
-  token: getToken(state),
+const mapStateToProps = (state) => ({
+	token: getToken(state)
 });
 
 export default connect(mapStateToProps)(AuthRoute);
