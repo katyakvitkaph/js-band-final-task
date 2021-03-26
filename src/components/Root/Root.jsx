@@ -5,14 +5,14 @@ import { HashRouter as Router, Route } from 'react-router-dom';
 import App from '../App/App';
 import { store, persistor } from '../../store/store';
 
-const Root = () => {
-  return (<Provider store={store}>
-    <PersistGate persistor={persistor}>
-      <Router basename="/">
-        <Route component={App} />
-      </Router>
-    </PersistGate>
-  </Provider>
-)}
+const Root = () => (
+		<Provider store={store}>
+			<PersistGate persistor={persistor}>
+				<Router basename='/'>
+					<Route component={App} />
+				</Router>
+			</PersistGate>
+		</Provider>
+	);
 
 export default Root;

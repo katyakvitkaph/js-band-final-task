@@ -3,6 +3,11 @@
 @import "./common";
 @import "./components/buttons/buttons";
 @import "./pages/loginPage";
-@import './components/form/form'
+@import "./pages/_booksPage";
+@import './components/form/form';
+@import './components/header/header';
+@import './components/booksList/bookList';
+@import './components/book/book';
+@import '../scss/components/loading/loading'
 
 

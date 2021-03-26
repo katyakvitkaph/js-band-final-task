@@ -349,15 +349,14 @@ template {
   src: url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;1,500&family=Lexend&display=swap");
   font-weight: 400;
   font-size: 14px;
-  border-radius: 0 !important;
 }
 
 .container {
   margin: 0 auto;
+  width: 1280px;
 }
 
-.common-btn {
-  width: 200px;
+.btn {
   height: 40px;
   font-size: 14px;
   border: 0;
@@ -371,6 +370,44 @@ template {
   cursor: pointer;
 }
 
+.login-btn {
+  width: 200px;
+}
+
+.logout-btn {
+  width: 100px;
+}
+
+.logout-btn:hover:hover,
+.book-item__footer-btn:hover {
+  background-color: #ff5722;
+  color: #fff;
+}
+
+.cart-btn {
+  position: relative;
+  font-size: 18px;
+  width: 70px;
+  z-index: 2;
+}
+
+.cart-btn:hover {
+  background-size: 100% 2px;
+}
+
+.cart-btn:before {
+  content: '';
+  display: block;
+  background-image: url("../../../icons/cart.svg");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: -20px;
+  z-index: 3;
+}
+
 .logo {
   display: block;
   margin: 0 auto;
@@ -378,6 +415,11 @@ template {
 
 .login-page {
   padding: 200px;
+  margin: 0 auto;
+}
+
+.page-book {
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -392,6 +434,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .form__label {
@@ -417,6 +460,154 @@ template {
 .error-msg {
   color: red;
   position: absolute;
-  bottom: 7%;
+  bottom: 34%;
+}
+
+.header {
+  width: 100%;
+  -webkit-box-shadow: 4px 59px 98px 36px rgba(156, 156, 156, 0.15);
+          box-shadow: 4px 59px 98px 36px rgba(156, 156, 156, 0.15);
+  color: #222222;
+}
+
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px;
+}
+
+.header__navigation-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+
+.header__navigation-title:hover {
+  color: #ff5722;
+}
+
+.header__functionality {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  background-color: #f1f1f1;
+}
+
+.header__functionality-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 15px;
+}
+
+.books-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  padding-top: 120px;
+  z-index: 9;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.books-list__book {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  border: 3px double #f1f1f1;
+  padding: 30px;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 35px 32px -10px rgba(128, 128, 128, 0.09);
+          box-shadow: 1px 35px 32px -10px rgba(128, 128, 128, 0.09);
+  margin-bottom: 20px;
+}
+
+.wrapper > span {
+  position: absolute;
+  font-weight: 900;
+  font-size: 200px;
+  top: -0.5%;
+  line-height: 221px;
+  color: #fbfbfb;
+  z-index: 0;
+}
+
+.book-item__image {
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.book-item__name-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.book-item__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.book-item__footer-price {
+  padding: 9.5px;
+  font-size: 14px;
+  margin: 0;
+  background: #f9f0e1;
+  letter-spacing: 0px;
+  line-height: 21px;
+  font-family: inherit;
+  color: #ff5722;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+}
+
+.book-item__footer-btn {
+  padding: 0 15px;
+}
+
+.signin-loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.bookList-loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 313px;
 }
 /*# sourceMappingURL=main.css.map */

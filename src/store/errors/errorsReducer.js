@@ -1,9 +1,7 @@
-import { ActionTypes  } from '../session/sessionActions';
-
+import { ActionTypes } from '../session/sessionActions';
 
 const initialState = {
   sessionError: '',
-
 };
 
 const errors = (state = initialState, { type, payload }) => {
@@ -15,6 +13,7 @@ const errors = (state = initialState, { type, payload }) => {
     case ActionTypes.UPDATE_SUCCESS:
     case ActionTypes.CLEAR_ERROR_MESSAGE:
       return { ...state, sessionError: '' };
+
     default:
       return state;
   }

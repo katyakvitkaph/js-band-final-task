@@ -1,14 +1,13 @@
-import * as api from '../../services/userApi';
-import  * as sessionActions from './sessionActions';
-import * as selectors from './sessionSelectors'
+import * as services from '../../services/userApi';
+import * as sessionActions from './sessionActions';
+import * as selectors from './sessionSelectors';
 
 export const login = params => dispatch => {
   dispatch(sessionActions.loginRequest());
-  api
+  services
     .login(params)
-    .then(( {data} ) => dispatch(sessionActions.loginSuccess(data)))
-    .catch(({ message }) => dispatch(sessionActions.loginError(message)))
-
+    .then(({ data }) => dispatch(sessionActions.loginSuccess(data)))
+    .catch(({ message }) => dispatch(sessionActions.loginError(message)));
 };
 
 export const updateUser = () => (dispatch, getState) => {
@@ -17,7 +16,7 @@ export const updateUser = () => (dispatch, getState) => {
   if (!token || !username) return;
 
   dispatch(sessionActions.updateUserRequest());
-  api
+  services
     .login({ username })
     .then(({ data }) => dispatch(sessionActions.updateUserSuccess(data)))
     .catch(({ message }) => dispatch(sessionActions.updateUserError(message)));
