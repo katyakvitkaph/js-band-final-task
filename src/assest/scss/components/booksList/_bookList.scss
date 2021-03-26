@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  padding: 0;
   padding-top: 120px;
   z-index: 9;
 }
@@ -26,8 +27,10 @@
   position: absolute;
   font-weight: 900;
   font-size: 200px;
-  top: -0.5%;
+  top: -150px;
+  right: 0;
   line-height: 221px;
   color: #fbfbfb;
   z-index: 0;
+  opacity: 0.6;
 }

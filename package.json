@@ -34,6 +34,17 @@
       "react-app/jest"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "eslint": "^7.22.0",
     "eslint-config-airbnb": "^18.2.1",

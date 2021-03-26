@@ -10,7 +10,8 @@
     font-weight: 600;
     margin-bottom: 20px;
 }
-.form__input {
+
+.input {
     display: inline-block;
     background-color: #f5f7fa;
     width: 200px;
@@ -19,6 +20,9 @@
     color: #000;
     transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     outline: none;
+ 
+}
+.form__input {
     margin-bottom: 30px;
     position: relative;
 }
@@ -28,4 +32,21 @@
     color: red;
     position: absolute;
     bottom: 34%;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+.filter__price {
+    width: 200px;
+    display: inline-block;
+    background-color: #f5f7fa;
+    border: 0;
+    padding: 11px 32px 11px 8px;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+
 }

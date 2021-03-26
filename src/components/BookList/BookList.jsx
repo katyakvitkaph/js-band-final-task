@@ -6,13 +6,11 @@ import Book from '../Book/index';
 const BookList = ({ books, getBooks, isLoading }) => {
   useEffect(() => {
     if (!books.length) getBooks();
-  });
+  }, []);
   return (
     <>
       {isLoading ? (
-        <div className="bookList-loader">
           <Loader />
-        </div>
       ) : (
         <div className="wrapper">
           <span>books</span>
