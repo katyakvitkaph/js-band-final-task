@@ -7,6 +7,7 @@ import sessionReducer from './session/sessionReducer';
 import errors from './errors/errorsReducer';
 import loadings from './loading/loadingReducer';
 import books from './books/booksReducer';
+import filters from './filters/filtersReducer';
 
 const persistConfig = {
   key: 'root',
@@ -19,6 +20,7 @@ const rootReducer = combineReducers({
   errors,
   loadings,
   books,
+  filters
 });
 
 const middleware = [ReduxThunk];

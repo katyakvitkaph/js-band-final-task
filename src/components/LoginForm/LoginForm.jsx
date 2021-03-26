@@ -30,16 +30,15 @@ const LoginForm = props => {
   return (
     <>
       {isLoading ? (
-        <div className="signin-loader">
           <Loader />
-        </div>
+
       ) : (
         <form className="form login-page__form" onClick={handleSubmit}>
           <label className="form__label" htmlFor="username">
             Name
           </label>
           <input
-            className="form__input"
+            className="form__input input"
             type="text"
             id="username"
             value={username}
