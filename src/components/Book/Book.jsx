@@ -11,7 +11,7 @@ const Book = ({  id,title, cover, author, price}) => (
     <div className="book-item__footer">
       <p className="book-item__footer-price">{price}$
       </p>
-      <Link to={`/books/${id}`}>
+      <Link to={`/catalog/${id}`}>
         <button type="button" className="btn book-item__footer-btn">
           View
         </button>

@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { getToken } from '../../store/session/sessionSelectors';
 
 const AuthRoute = ({ component: Component, token, ...rest }) => (
-	<Route {...rest} render={(props) => (token ? <Component {...props} /> : <Redirect to='/signin' />)} />
+	<Route {...rest} render={(props) => (token ? <Component {...props} /> : <Redirect to='/login' />)} />
 );
 
 AuthRoute.propTypes = {

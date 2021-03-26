@@ -4,9 +4,9 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import LoginPage from '../../pages/LoginPage';
 import BooksPage from '../../pages/BooksPage';
+import BookDetailPage from '../../pages/BookDetailPage';
 import AuthRoute from '../../HOC/AuthRoute/index';
 import { getToken } from '../../store/session/sessionSelectors';
-
 import { updateUser } from '../../store/session/sessionOperations';
 
 const App = ({ token }) => {
@@ -17,9 +17,10 @@ const App = ({ token }) => {
 
 	return (
 		<Switch>
-			<Redirect exact from='/' to='/signin' />
-			<Route exact path='/signin' component={LoginPage} />
-			<AuthRoute exact path='/books' component={BooksPage} />
+			<Redirect exact from='/' to='/login' />
+			<Route exact path='/login' component={LoginPage} />
+			<AuthRoute exact path='/catalog' component={BooksPage} />
+			<AuthRoute exact path='/catalog/:id' component={BookDetailPage} />
 		</Switch>
 	);
 };

@@ -12,7 +12,7 @@ const Header = ({ username }) => (
 		</div>
 		<div className='header__functionality'>
 			<div className='container header__functionality-icons'>
-				<Link to='/books'>
+				<Link to='/catalog'>
 					<Logo width='200px' height='60px' />
 				</Link>
 				<Link to='/cart'>

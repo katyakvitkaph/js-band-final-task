@@ -1,0 +1,52 @@
+.book-card {
+    display : flex;
+
+}
+
+.book-card__image-block {
+
+width: 300px;
+margin-right: 40px;
+
+&>img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+&>p {
+    line-height: 20px;
+}
+}
+
+.book-author {
+    margin-bottom: 30px;
+}
+.book-title {
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.tags {
+    margin-left: 30px;
+    position: relative;
+   
+}
+
+.tag {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.tags:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    background-image: url('../../../icons/tags.svg');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  margin-right: 10px;
+}

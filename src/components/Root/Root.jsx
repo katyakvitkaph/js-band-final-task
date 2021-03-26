@@ -13,6 +13,6 @@ const Root = () => (
 				</Router>
 			</PersistGate>
 		</Provider>
-	);
+	)
 
 export default Root;
