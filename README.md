@@ -2,7 +2,7 @@
 
 **JS Band. Final task**
 
-This application is an online bookstore. An authorized user has access to the catalog of books and find information about the title and author, price, and a button for detailed information is available to the user. On the book detailed information page, user can add and remove the selected book from the basket, as well as adjust the amount of the selected book in the basket. To purchase and view the entire list of orders, the user goes to the "Cart" page by clicking on the "Purchase" button.
+This application is an online bookstore. An authorized user has access to the catalog of books and find information about the title and author, price, and a button for detailed information. On the book detailed information page, user can add and remove the selected book from the basket, as well as adjust the amount of the selected book in the basket. To purchase and view the entire list of orders, the user goes to the "Cart" page by clicking on the "Purchase" button.
 
 ## Launching
 
