@@ -16,7 +16,7 @@ const withAuth = BaseComponent => {
       const { authentificated, history } = this.props;
       if (!authentificated) return;
 
-      history.replace('/books');
+      history.replace('/catalog');
     }
 
     componentDidUpdate() {
@@ -25,7 +25,7 @@ const withAuth = BaseComponent => {
       if (location.state && location.state.from) {
         history.replace(location.state.from);
       } else {
-        history.replace('/books');
+        history.replace('/catalog');
       }
     }
 
