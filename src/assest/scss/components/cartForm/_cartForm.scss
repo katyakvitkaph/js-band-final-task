@@ -1,5 +1,31 @@
 .cart-section {
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
+  width: 400px;
+
+}
+
+.cart-form__main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.cart-form {
+  position: relative;
+  width: 400px;
+}
+
+.cart-form__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid rgb(202, 202, 202);
+}
+
+.cart-form__title {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+
 }

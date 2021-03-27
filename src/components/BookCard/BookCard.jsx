@@ -5,6 +5,7 @@ import Loader from '../Loader/index';
 const BookCard = ({ book }) =>
 	book ? (
 		<section className='book-card'>
+			<div className='shadow' />
 			<div className='book-card__image-block'>
 				<img alt='book' src={book.cover} className='book-card__image' />{' '}
 				<p className='description'>{book.description}</p>

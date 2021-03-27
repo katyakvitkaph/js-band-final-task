@@ -15,12 +15,14 @@
 .login-btn {
   width: 200px;
 }
+
 .logout-btn {
   width: 100px;
 }
 
 .logout-btn:hover:hover,
-.book-item__footer-btn:hover {
+.book-item__footer-btn:hover,
+.cart-form__button:hover {
   background-color: #ff5722;
   color: #fff;
 }
@@ -47,4 +49,12 @@
   position: absolute;
   left: -20px;
   z-index: 3;
+}
+
+
+.cart-form__button {
+  position: absolute;
+  right: 0;
+  color: rgb(68, 67, 67);
+  margin-top: 20px;
 }

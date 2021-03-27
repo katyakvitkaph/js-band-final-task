@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-// import ReactRouterPropTypes from 'react-router-prop-types';
 import Loader from '../Loader/index';
 import BookCard from '../BookCard';
 import CartForm from '../CartForm';
@@ -18,7 +17,7 @@ const BookData = ({ isLoading, getBook, match, deleteDetailsBookFromStore }) => 
 		<section className='book-data'>
 			{isLoading && <Loader />}
 			<BookCard />
-			<CartForm />/
+			<CartForm />
 		</section>
 	);
 };
