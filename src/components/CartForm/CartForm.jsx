@@ -58,11 +58,17 @@ const CartForm = ({ book, addBookToCart }) => {
 };
 
 CartForm.propTypes = {
-	id: PropTypes.string.isRequired,
-	price: PropTypes.string.isRequired,
-	book: PropTypes.string.isRequired,
+	id: PropTypes.string,
+	price: PropTypes.string,
+	book: PropTypes.shape.isRequired,
 	addBookToCart: PropTypes.func.isRequired,
-	title: PropTypes.string.isRequired
+	title: PropTypes.string
 };
 
+
+CartForm.defaultProps = {
+	title: '',
+	price: '',
+	id: ''
+};
 export default CartForm;

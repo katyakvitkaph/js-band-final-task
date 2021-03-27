@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { isAuth, getUsername } from '../../store/session/sessionSelectors';
+import { logout } from '../../store/session/sessionActions';
 import Header from './Header';
 
 const mapStateToProps = state => ({
@@ -7,4 +8,10 @@ const mapStateToProps = state => ({
   username: getUsername(state),
 });
 
-export default connect(mapStateToProps)(Header);
+const mapDispatchToProps = dispatch => ({
+  handleLogout: () => {
+    dispatch(logout());
+  },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

@@ -24,7 +24,6 @@
 .book-item__footer-btn:hover,
 .cart-form__button:hover,
 .cart-data__btn:hover,
-
 .page-not-found__btn:hover
 {
   background-color: #ff5722;
@@ -40,6 +39,11 @@
 
 .cart-btn:hover {
   background-size: 100% 2px;
+}
+
+.cart-btn:hover {
+  font-size: 20px;
+  transition: 0.5s;
 }
 
 .cart-btn:before {
@@ -70,4 +74,11 @@
   right: 18%;
   top: -80px;
   width: 100px;
+}
+
+.btn:disabled {
+  background-color: rgba(136, 136, 136, 0.171);
+  color: #fff;
+  cursor: not-allowed;
+  pointer-events: all !important;
 }

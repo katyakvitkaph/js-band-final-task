@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Button from '../Button/index';
 import Loader from '../Loader/index';
+import { ReactComponent as Logo } from '../../assest/icons/logo_transparent.svg';
 
 const LoginForm = props => {
   const [username, setUsername] = useState('');
@@ -13,7 +14,7 @@ const LoginForm = props => {
     if (error && username) {
       clearErrorMessage();
     }
-  }, [username]);
+  }, [clearErrorMessage, error, username]);
 
   const handleChange = e => {
     setUsername(e.target.value);
@@ -33,6 +34,8 @@ const LoginForm = props => {
           <Loader />
 
       ) : (
+        <>
+        	<Logo className='logo' width='200px' height='200px' />
         <form className="form login-page__form" onClick={handleSubmit}>
           <label className="form__label" htmlFor="username">
             Name
@@ -52,6 +55,7 @@ const LoginForm = props => {
 
           <Button type="submit" name="Log In" className="btn login-btn" />
         </form>
+        </>
       )}
     </>
   );
