@@ -13,9 +13,9 @@ const CartForm = ({ book, addBookToCart }) => {
 	};
 
 	const handleSubmit = (e) => {
-		const { id, title } = book;
+		const { id, title, price } = book;
 		e.preventDefault();
-		addBookToCart({ count, totalPrice, title, id });
+		addBookToCart({ count, totalPrice, title, id, price });
 		setTotalPrice(0);
 		setCount(0);
 	};

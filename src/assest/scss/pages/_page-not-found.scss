@@ -1,0 +1,35 @@
+.page-not-found {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+};
+
+.content-block {
+  margin-top: 250px;
+  z-index: 30;
+}
+.page-not-found__nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-not-found__title {
+  font-size: 45px;
+  font-weight: bold;
+  color: #4f4d59;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.textError {
+  font-size: 272px;
+  color: hsl(0, 0%, 95%);
+  position: absolute;
+  opacity: 0.5;
+  top: -40%;
+  left: 400px;
+  z-index: 1;
+};

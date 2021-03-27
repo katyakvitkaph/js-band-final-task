@@ -8,12 +8,14 @@
 @import './components/header/header';
 @import './components/booksList/bookList';
 @import './components/book/book';
-@import '../scss/components/loading/loading';
-@import '../scss/pages/bookDetailPage';
-@import '../scss/components/bookCard/bookCard';
-@import '../scss/components/bookData/bookData';
-@import '../scss/components/cartForm/cartForm';
-@import '../scss//components/cartData/cartData';
-@import '../scss//components/table/table';
+@import './components/loading/loading';
+@import './pages/bookDetailPage';
+@import './components/bookCard/bookCard';
+@import './components/bookData/bookData';
+@import './components/cartForm/cartForm';
+@import './components/cartData/cartData';
+@import './components/table/table';
+@import './components/modal/modal';
+@import './pages/page-not-found';
 
 

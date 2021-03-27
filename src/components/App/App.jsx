@@ -9,6 +9,7 @@ import CartPage from '../../pages/CartPage';
 import AuthRoute from '../../HOC/AuthRoute/index';
 import { getToken } from '../../store/session/sessionSelectors';
 import { updateUser } from '../../store/session/sessionOperations';
+import NotFoundPage from '../../pages/NotFoundPage';
 
 const App = ({ token }) => {
 	useEffect(() => {
@@ -23,6 +24,7 @@ const App = ({ token }) => {
 			<AuthRoute exact path='/catalog' component={BooksPage} />
 			<AuthRoute exact path='/catalog/:id' component={BookDetailPage} />
 			<AuthRoute exact path='/cart' component={CartPage} />
+			<Route path='*' component={NotFoundPage} /> 
 		</Switch>
 	);
 };

@@ -10,6 +10,7 @@ import books from './books/booksReducer';
 import filters from './filters/filtersReducer';
 import bookDetails from './bookDetail/bookDetailReducer';
 import cartList from './cartList/cartListReducer';
+import modalOpen from './modalControllers/modalControllersReducer';
 
 const persistConfig = {
   key: 'root',
@@ -25,6 +26,7 @@ const rootReducer = combineReducers({
   filters,
   bookDetails,
   cartList,
+  modalOpen,
 });
 
 const middleware = [ReduxThunk];
