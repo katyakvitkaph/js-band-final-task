@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.cart-data {
+.cart-data__table {
   position: relative;
 }
 
@@ -23,12 +23,15 @@
   background-image: url('../../../icons/cart.svg');
   background-repeat: no-repeat;
   background-size: 45px;
-  // margin-right: 10px;
 }
 
 .cart-data__total-price {
   font-weight: 600;
-  display: flex;
+  text-align: end;
   margin-right: 230px;
-  justify-content: flex-end;
+}
+
+
+.cart-page {
+  padding-top: 180px;
 }

@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 
-.login-btn {
+.login-btn , .page-not-found__btn{
   width: 200px;
 }
 
@@ -23,7 +23,10 @@
 .logout-btn:hover:hover,
 .book-item__footer-btn:hover,
 .cart-form__button:hover,
-.cart-data__btn:hover {
+.cart-data__btn:hover,
+
+.page-not-found__btn:hover
+{
   background-color: #ff5722;
   color: #fff;
 }
@@ -57,6 +60,7 @@
   right: 0;
   color: rgb(68, 67, 67);
   margin-top: 20px;
+  width: 100px;
 }
 
 .cart-data__btn {
