@@ -22,7 +22,8 @@
 
 .logout-btn:hover:hover,
 .book-item__footer-btn:hover,
-.cart-form__button:hover {
+.cart-form__button:hover,
+.cart-data__btn:hover {
   background-color: #ff5722;
   color: #fff;
 }
@@ -51,10 +52,18 @@
   z-index: 3;
 }
 
-
 .cart-form__button {
   position: absolute;
   right: 0;
   color: rgb(68, 67, 67);
   margin-top: 20px;
+}
+
+.cart-data__btn {
+  border: 1px solid #b3b3b3;
+  background-color: #fff;
+  position: absolute;
+  right: 18%;
+  top: -80px;
+  width: 100px;
 }

@@ -8,7 +8,8 @@ import errors from './errors/errorsReducer';
 import loadings from './loading/loadingReducer';
 import books from './books/booksReducer';
 import filters from './filters/filtersReducer';
-import bookDetails from './bookDetail/bookDetailReducer'
+import bookDetails from './bookDetail/bookDetailReducer';
+import cartList from './cartList/cartListReducer';
 
 const persistConfig = {
   key: 'root',
@@ -22,7 +23,8 @@ const rootReducer = combineReducers({
   loadings,
   books,
   filters,
-  bookDetails
+  bookDetails,
+  cartList,
 });
 
 const middleware = [ReduxThunk];

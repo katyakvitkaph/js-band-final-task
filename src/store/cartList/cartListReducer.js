@@ -1,4 +1,4 @@
-import { ActionTypes } from './cartListActions;
+import { ActionTypes } from './cartListActions';
 
 const cartList = (state = [], { type, payload }) => {
   switch (type) {
