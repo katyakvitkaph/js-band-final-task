@@ -380,7 +380,8 @@ template {
 
 .logout-btn:hover:hover,
 .book-item__footer-btn:hover,
-.cart-form__button:hover {
+.cart-form__button:hover,
+.cart-data__btn:hover {
   background-color: #ff5722;
   color: #fff;
 }
@@ -414,6 +415,15 @@ template {
   right: 0;
   color: #444343;
   margin-top: 20px;
+}
+
+.cart-data__btn {
+  border: 1px solid #b3b3b3;
+  background-color: #fff;
+  position: absolute;
+  right: 18%;
+  top: -80px;
+  width: 100px;
 }
 
 .logo {
@@ -757,5 +767,98 @@ template {
   margin: 0;
   font-weight: 600;
   font-size: 14px;
+}
+
+.cart-data__wrapper {
+  text-align: center;
+}
+
+.cart-data {
+  position: relative;
+}
+
+.cart-data__wrapper-text {
+  margin-top: 250px;
+  font-weight: 600;
+  position: relative;
+}
+
+.cart-data__wrapper-text:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 58.5%;
+  top: 2px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
+  background-image: url("../../../icons/cart.svg");
+  background-repeat: no-repeat;
+  background-size: 45px;
+}
+
+.cart-data__total-price {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 230px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+table,
+th,
+td {
+  border: 1px solid #c9c9c9;
+}
+
+td {
+  padding: 10px;
+}
+
+.table {
+  margin: 0 auto;
+  margin-top: 80px;
+  background-color: #fff;
+  text-align: center;
+  width: 820px;
+}
+
+.table .table__cell {
+  font-weight: 300;
+  width: 175px;
+}
+
+.table .table__cell-header {
+  font-weight: 700;
+  background: #c6c6c7;
+  color: black;
+  text-align: center;
+}
+
+.table .table__row {
+  background: #f4f7f8;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 5px;
+}
+
+.table .table__row:nth-child(even) {
+  background: #e8eeef;
+}
+
+.table .table__row th {
+  text-align: center;
+  font-weight: 700;
+}
+
+.table .table__row {
+  height: 50px;
+}
+
+.table .table__cell .table__cell-header {
+  height: 40px;
 }
 /*# sourceMappingURL=main.css.map */

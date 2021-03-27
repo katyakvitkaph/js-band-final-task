@@ -6,7 +6,7 @@ import {
   clearErrorMessage,
 } from '../../store/session/sessionActions';
 import { getSessionLoading } from '../../store/loading/loadingSelectors';
-import getSessionError from '../../store/errors/errorsSelectors';
+import { getSessionError } from '../../store/errors/errorsSelectors';
 
 const mapStateToProps = state => ({
   error: getSessionError(state),

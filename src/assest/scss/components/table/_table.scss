@@ -1,0 +1,50 @@
+table,
+th,
+td {
+  border: 1px solid rgb(201, 201, 201);
+}
+td {
+  padding: 10px;
+}
+.table {
+  margin: 0 auto;
+  margin-top: 80px;
+  background-color: #fff;
+  text-align: center;
+  width: 820px;
+
+  .table__cell {
+    font-weight: 300;
+    width: 175px;
+  }
+
+  .table__cell-header {
+    font-weight: 700;
+    background: #c6c6c7;
+    color: black;
+    text-align: center;
+  }
+
+  .table__row {
+    background: #f4f7f8;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 5px;
+
+    &:nth-child(even) {
+      background: #e8eeef;
+    }
+
+    & th {
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+
+  .table__row {
+    height: 50px;
+  }
+
+  .table__cell .table__cell-header {
+    height: 40px;
+  }
+}

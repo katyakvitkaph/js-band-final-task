@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import LoginPage from '../../pages/LoginPage';
 import BooksPage from '../../pages/BooksPage';
 import BookDetailPage from '../../pages/BookDetailPage';
+import CartPage from '../../pages/CartPage';
 import AuthRoute from '../../HOC/AuthRoute/index';
 import { getToken } from '../../store/session/sessionSelectors';
 import { updateUser } from '../../store/session/sessionOperations';
@@ -21,6 +22,7 @@ const App = ({ token }) => {
 			<Route exact path='/login' component={LoginPage} />
 			<AuthRoute exact path='/catalog' component={BooksPage} />
 			<AuthRoute exact path='/catalog/:id' component={BookDetailPage} />
+			<AuthRoute exact path='/cart' component={CartPage} />
 		</Switch>
 	);
 };
