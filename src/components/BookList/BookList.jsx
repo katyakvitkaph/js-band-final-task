@@ -6,6 +6,7 @@ import Book from '../Book/index';
 const BookList = ({ books, getBooks, isLoading }) => {
   useEffect(() => {
     if (!books.length) getBooks();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <>

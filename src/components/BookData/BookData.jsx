@@ -12,7 +12,8 @@ const BookData = ({ getBook, match, deleteDetailsBookFromStore }) => {
 
 			deleteDetailsBookFromStore();
 		},
-		[ match ]
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+		[ match]
 	);
 
 	return (

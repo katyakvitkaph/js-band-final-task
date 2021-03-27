@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import Button from '../Button/index';
 import { ReactComponent as Logo } from '../../assest/icons/header-logo.svg';
 
-const Header = ({ username }) => (
+const Header = ({ username, handleLogout }) => (
 	<header className='header'>
 		<div className='header__navigation container'>
 			<h3 className='header__navigation-title'>{username}</h3>
-			<Button name='Log out' type='button' className='btn logout-btn' />
+			<Button name='Log out' type='button' className='btn logout-btn' onClick={handleLogout} />
 		</div>
 		<div className='header__functionality'>
 			<div className='container header__functionality-icons'>
@@ -23,7 +23,8 @@ const Header = ({ username }) => (
 	</header>
 );
 Header.propTypes = {
-	username: PropTypes.string
+	username: PropTypes.string,
+	handleLogout: PropTypes.func.isRequired
 };
 
 Header.defaultProps = {

@@ -398,6 +398,12 @@ template {
   background-size: 100% 2px;
 }
 
+.cart-btn:hover {
+  font-size: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .cart-btn:before {
   content: '';
   display: block;
@@ -426,6 +432,13 @@ template {
   right: 18%;
   top: -80px;
   width: 100px;
+}
+
+.btn:disabled {
+  background-color: rgba(136, 136, 136, 0.171);
+  color: #fff;
+  cursor: not-allowed;
+  pointer-events: all !important;
 }
 
 .logo {
@@ -686,13 +699,13 @@ template {
 
 .shadow {
   position: absolute;
-  width: 560px;
+  width: 600px;
   height: 371px;
-  left: -5%;
-  top: 18%;
+  left: -20%;
+  top: 35%;
   z-index: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(212, 215, 229, 0.2)), to(rgba(212, 215, 229, 0)));
-  background: linear-gradient(180deg, rgba(212, 215, 229, 0.2) 0%, rgba(212, 215, 229, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(212, 215, 229, 0.2)), to(rgba(245, 139, 0, 0)));
+  background: linear-gradient(180deg, rgba(212, 215, 229, 0.2) 0%, rgba(245, 139, 0, 0) 100%);
 }
 
 .tags {
