@@ -25,18 +25,6 @@ const username = (state = null, { type, payload }) => {
   }
 };
 
-const avatar = (state = null, { type, payload }) => {
-  switch (type) {
-    case ActionTypes.LOGIN_SUCCESS:
-    case ActionTypes.UPDATE_USER_SUCCESS:
-      return payload.avatar;
-    case ActionTypes.LOGOUT:
-      return null;
-    default:
-      return state;
-  }
-};
-
 const isAuth = (state = false, { type }) => {
   switch (type) {
     case ActionTypes.LOGIN_SUCCESS:
@@ -51,7 +39,6 @@ const isAuth = (state = false, { type }) => {
 
 export default combineReducers({
   username,
-  avatar,
   token,
   isAuth,
 });
