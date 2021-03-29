@@ -31,7 +31,7 @@ const CartForm = ({ book, addBookToCart }) => {
 						</div>
 						<div className='cart-form__block'>
 							<label htmlFor='count' className='cart-form__title'>
-								Count{' '}
+								Count
 							</label>
 							<input
 								id='count'
@@ -60,8 +60,8 @@ const CartForm = ({ book, addBookToCart }) => {
 CartForm.propTypes = {
 	id: PropTypes.string,
 	price: PropTypes.string,
-	book: PropTypes.shape.isRequired,
-	addBookToCart: PropTypes.func.isRequired,
+	book: PropTypes.func,
+	addBookToCart: PropTypes.func,
 	title: PropTypes.string
 };
 
@@ -69,6 +69,8 @@ CartForm.propTypes = {
 CartForm.defaultProps = {
 	title: '',
 	price: '',
-	id: ''
+	id: '',
+	addBookToCart: null,
+	book: null
 };
 export default CartForm;

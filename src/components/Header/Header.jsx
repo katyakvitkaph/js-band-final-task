@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Button from '../Button/index';
 import { ReactComponent as Logo } from '../../assest/icons/header-logo.svg';
 
-const Header = ({ username, handleLogout }) => (
+const Header = ({ username, handleLogout,count }) => (
 	<header className='header'>
 		<div className='header__navigation container'>
 			<h3 className='header__navigation-title'>{username}</h3>
@@ -18,17 +18,19 @@ const Header = ({ username, handleLogout }) => (
 				<Link to='/cart'>
 					<Button name='Cart' type='button' className='btn cart-btn' />
 				</Link>
+				{count > 0 && <div className="cart-number">{count}</div>}
 			</div>
 		</div>
 	</header>
 );
 Header.propTypes = {
 	username: PropTypes.string,
-	handleLogout: PropTypes.func.isRequired
+	handleLogout: PropTypes.func.isRequired,
+	count : PropTypes.number.isRequired,
 };
 
 Header.defaultProps = {
-	username: ''
+	username: '',
 };
 
 export default Header;

@@ -62,10 +62,19 @@ const LoginForm = props => {
 };
 
 LoginForm.propTypes = {
-  loginError: PropTypes.func.isRequired,
-  login: PropTypes.func.isRequired,
-  isLoading: PropTypes.bool.isRequired,
-  error: PropTypes.string.isRequired,
-  clearErrorMessage: PropTypes.func.isRequired,
+  loginError: PropTypes.func,
+  login: PropTypes.func,
+  isLoading: PropTypes.bool,
+  error: PropTypes.string,
+  clearErrorMessage: PropTypes.func,
 };
+
+LoginForm.defaultProps = {
+loginError: null,
+error : '',
+clearErrorMessage: null,
+isLoading: false,
+login: null
+};
+
 export default LoginForm;
