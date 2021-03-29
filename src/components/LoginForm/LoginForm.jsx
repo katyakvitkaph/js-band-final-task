@@ -14,7 +14,7 @@ const LoginForm = props => {
     if (error && username) {
       clearErrorMessage();
     }
-  }, [clearErrorMessage, error, username]);
+  }, [username]);
 
   const handleChange = e => {
     setUsername(e.target.value);
