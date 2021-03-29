@@ -24,9 +24,17 @@ const FilterForm = (props) => {
 	);
 };
 FilterForm.propTypes = {
-	onChange: PropTypes.func.isRequired,
-	title: PropTypes.string.isRequired,
-	price: PropTypes.string.isRequired
+	onChange: PropTypes.string,
+	title: PropTypes.string,
+	price: PropTypes.string
+};
+
+
+FilterForm.defaultProps = {
+	onChange: '',
+	title: '',
+	price: '',
+
 };
 
 export default FilterForm;

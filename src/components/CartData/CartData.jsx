@@ -5,8 +5,7 @@ import Button from '../Button/index';
 import CartTable from '../CartTable/index';
 import Modal from '../Modal/index';
 
-const CartData = ({ books, isOpenModal, modalOpen, handlePurchase }) => (
-		<section className='cart-data container'>
+const CartData = ({ books, isOpenModal, modalOpen, handlePurchase }) => (	<section className='cart-data container'>
 			{!books.length ? (
 				<div className='cart-data__wrapper'>
 					<h2 className='cart-data__wrapper-text'>Your shopping cart is empty...</h2>
@@ -43,21 +42,23 @@ const CartData = ({ books, isOpenModal, modalOpen, handlePurchase }) => (
 				</div>
 			)}
 		</section>
-	);
-
+	)
 CartData.propTypes = {
 	books: PropTypes.arrayOf(
 		PropTypes.shape({
 			totalPrice: PropTypes.number.isRequired
 		}).isRequired
 	),
-	isOpenModal: PropTypes.func.isRequired,
-	modalOpen: PropTypes.bool.isRequired,
-	handlePurchase: PropTypes.func.isRequired
+	isOpenModal: PropTypes.func,
+	modalOpen: PropTypes.bool,
+	handlePurchase: PropTypes.func
 };
 
 CartData.defaultProps = {
-	books: []
+	books: [],
+	handlePurchase: null,
+	modalOpen: false,
+	isOpenModal: null
 };
 
 export default CartData;
