@@ -16,6 +16,6 @@ Button.propTypes = {
 Button.defaultProps = {
 	name: '',
 	className: '',
-	onClick : null
+	onClick: null
 };
 export default Button;
