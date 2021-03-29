@@ -24,14 +24,14 @@ const FilterForm = (props) => {
 	);
 };
 FilterForm.propTypes = {
-	onChange: PropTypes.string,
+	onChange: PropTypes.func,
 	title: PropTypes.string,
 	price: PropTypes.string
 };
 
 
 FilterForm.defaultProps = {
-	onChange: '',
+	onChange: null,
 	title: '',
 	price: '',
 

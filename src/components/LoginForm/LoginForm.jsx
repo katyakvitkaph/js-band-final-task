@@ -28,6 +28,12 @@ const LoginForm = props => {
     login({ username });
   };
 
+  const handleKeypress = (event: KeyboardEvent) => {
+    if (event.key === 'Enter' || event.charCode === 13) { 
+      handleSubmit(event)
+  }
+};
+
   return (
     <>
       {isLoading ? (
@@ -46,6 +52,7 @@ const LoginForm = props => {
             id="username"
             value={username}
             onChange={handleChange}
+            onKeyPress={handleKeypress}
           />
           {error && username ? (
             <div className="error-msg">Username is not valid.</div>
@@ -53,7 +60,7 @@ const LoginForm = props => {
             ''
           )}
 
-          <Button type="submit" name="Log In" className="btn login-btn" />
+          <Button  type="submit" name="Log In" className="btn login-btn" />
         </form>
         </>
       )}

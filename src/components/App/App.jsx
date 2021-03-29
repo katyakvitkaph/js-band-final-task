@@ -38,7 +38,11 @@ const mapStateDispatchToProps = {
 };
 
 App.propTypes = {
-	token: PropTypes.string.isRequired
+	token: PropTypes.string
 };
 
+App.defaultProps = {
+	token: '',
+	
+};
 export default connect(mapStateToProps, mapStateDispatchToProps)(App);
